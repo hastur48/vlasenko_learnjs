@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rewrite function</title>
+</head>
+<body>
+<script>
+    'use strict';
+    function firstCheckAge(age) {
+        return (age > 18) ? true : confirm('Parents allows you?');
+    }
+
+    function secondCheckAge(age){
+        return (age > 18) || confirm('Parents allows you?');
+    }
+</script>
+</body>
+</html>

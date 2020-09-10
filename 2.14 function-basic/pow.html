@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Power</title>
+</head>
+<body>
+<script>
+    'use strict';
+    function pow(num, power){
+        return (num**power)
+    }
+    let num = prompt('Input number: ','');
+    let power = prompt('Input power: ', '');
+
+    if (power < 1) {
+        alert('Use natural numbers')
+    } else alert(pow(num, power));
+</script>
+</body>
+</html>
