@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accumulator</title>
+</head>
+<body>
+<script>
+    'use strict';
+    function Accumulator(startingValue) {
+        this.value = startingValue;
+
+        this.read = function () {
+           this.value += +prompt('Input value: ', 0);
+        };
+    }
+</script>
+</body>
+</html>
