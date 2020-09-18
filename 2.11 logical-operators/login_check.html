@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login check</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let login = prompt('Who is it?', '');
+    if (login == 'admin') {
+        let password = prompt('password?', '');
+        if (password == 'I am the Boss') {
+            alert( 'Good day!' );
+        } else if (password == '' || password == null) {
+            alert( 'Canceled' );
+        } else {
+            alert( 'Wrong password!' );
+        }
+    } else if (login == '' || login == null) {
+        alert( 'Canceled' );
+    } else {
+        alert( "Unknown user" );
+    }
+</script>
+</body>
+</html>
